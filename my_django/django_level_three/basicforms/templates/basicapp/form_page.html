@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>FORM</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QlFhiFx32TU9re7U4sD3fb0kbiYtCAAZFfzEEd3xURyWN+5vqlyhXp8PvLS10tkB" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1>Fill out the form!</h1>
+        <div class="container">
+            <form method="POST">
+                {{form.as_p}} 
+                {% csrf_token %}
+                <input type="submit" value="Submit" class="btn btn-primary">
+            </form>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-HoQz7OmBIwYt4PCsYRxlg3V6SxKP5rY9EB6HlUCBi59AbRm7UrnVp3D4Ou4pbBI6" crossorigin="anonymous"></script>
+    </body>
+</html>
